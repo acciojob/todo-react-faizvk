@@ -2,14 +2,14 @@ import React from "react";
 
 const Todo = ({ tasks, onDelete }) => {
   return (
-    <div>
+    <ul>
       {tasks.map((task, index) => (
-        <div key={index}>
+        <li key={index}>
           <span>{task}</span>
           <button onClick={() => onDelete(task)}>Delete</button>
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 
